@@ -1,0 +1,48 @@
+
+
+  █ THRESHOLDS 
+
+    checks
+    ✓ 'rate>0.99' rate=100.00%
+
+    http_req_duration{group:::home}
+    ✓ 'p(95)<1000' p(95)=270.63ms
+
+    http_req_duration{group:::recommendation}
+    ✓ 'p(95)<1500' p(95)=375.35ms
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 532     2.892972/s
+    checks_succeeded...: 100.00% 532 out of 532
+    checks_failed......: 0.00%   0 out of 532
+
+    ✓ home page is 200
+    ✓ quotes are listed
+    ✓ recommendation is 200
+    ✓ pizza has a name
+
+    HTTP
+    http_req_duration..............: avg=285.03ms min=254.51ms med=262.46ms max=445.89ms p(90)=350.99ms p(95)=364.9ms  p(99)=388.79ms
+      { expected_response:true }...: avg=285.03ms min=254.51ms med=262.46ms max=445.89ms p(90)=350.99ms p(95)=364.9ms  p(99)=388.79ms
+      { group:::home }.............: avg=262.83ms min=254.51ms med=258.83ms max=445.89ms p(90)=270.07ms p(95)=270.63ms p(99)=329.57ms
+      { group:::recommendation }...: avg=329.55ms min=272.59ms med=330.69ms max=390.7ms  p(90)=369.12ms p(95)=375.35ms p(99)=389.83ms
+    http_req_failed................: 0.00%  0 out of 399
+    http_reqs......................: 399    2.169729/s
+
+    EXECUTION
+    iteration_duration.............: avg=5.88s    min=4.04s    med=5.84s    max=7.69s    p(90)=6.94s    p(95)=7.26s    p(99)=7.44s   
+    iterations.....................: 133    0.723243/s
+    vus............................: 1      min=1        max=5
+    vus_max........................: 5      min=5        max=5
+
+    NETWORK
+    data_received..................: 741 kB 4.0 kB/s
+    data_sent......................: 95 kB  518 B/s
+
+
+

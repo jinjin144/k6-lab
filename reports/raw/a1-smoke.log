@@ -1,0 +1,40 @@
+
+
+  █ THRESHOLDS 
+
+    checks
+    ✓ 'rate>0.99' rate=100.00%
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 20      0.653817/s
+    checks_succeeded...: 100.00% 20 out of 20
+    checks_failed......: 0.00%   0 out of 20
+
+    ✓ home page is 200
+    ✓ quotes are listed
+    ✓ recommendation is 200
+    ✓ pizza has a name
+
+    HTTP
+    http_req_duration..............: avg=286.24ms min=259.24ms med=266.51ms max=344.51ms p(90)=340ms p(95)=342.97ms p(99)=344.21ms
+      { expected_response:true }...: avg=286.24ms min=259.24ms med=266.51ms max=344.51ms p(90)=340ms p(95)=342.97ms p(99)=344.21ms
+    http_req_failed................: 0.00%  0 out of 15
+    http_reqs......................: 15     0.490362/s
+
+    EXECUTION
+    iteration_duration.............: avg=6.11s    min=5.68s    med=6.12s    max=6.63s    p(90)=6.44s p(95)=6.53s    p(99)=6.61s   
+    iterations.....................: 5      0.163454/s
+    vus............................: 1      min=1       max=1
+    vus_max........................: 1      min=1       max=1
+
+    NETWORK
+    data_received..................: 31 kB  1.0 kB/s
+    data_sent......................: 5.0 kB 163 B/s
+
+
+

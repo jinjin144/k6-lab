@@ -1,0 +1,157 @@
+{
+    "metrics": {
+        "vus": {
+            "value": 3,
+            "min": 3,
+            "max": 3
+        },
+        "http_req_blocked": {
+            "min": 0,
+            "med": 0,
+            "max": 670.3603,
+            "p(90)": 0,
+            "p(95)": 0,
+            "p(99)": 670.01146,
+            "avg": 29.13123043478261
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 69,
+            "thresholds": {
+                "rate<0.01": false
+            },
+            "value": 0
+        },
+        "http_reqs": {
+            "count": 69,
+            "rate": 2.2033932441172173
+        },
+        "http_req_receiving": {
+            "avg": 0.4102188405797102,
+            "min": 0,
+            "med": 0,
+            "max": 7.495,
+            "p(90)": 1.0039200000000001,
+            "p(95)": 1.4626199999999971,
+            "p(99)": 3.6217199999999607
+        },
+        "data_sent": {
+            "count": 12240,
+            "rate": 390.8628015651411
+        },
+        "iterations": {
+            "count": 69,
+            "rate": 2.2033932441172173
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 325.34125942028993,
+            "min": 275.0593,
+            "med": 326.3901,
+            "max": 378.0019,
+            "p(90)": 364.25286,
+            "p(95)": 370.41206,
+            "p(99)": 377.26784
+        },
+        "http_req_sending": {
+            "avg": 0.7656695652173914,
+            "min": 0,
+            "med": 0.5435,
+            "max": 8.5868,
+            "p(90)": 1.30088,
+            "p(95)": 1.8957799999999991,
+            "p(99)": 6.828319999999982
+        },
+        "http_req_tls_handshaking": {
+            "p(99)": 382.68604,
+            "avg": 16.56853043478261,
+            "min": 0,
+            "med": 0,
+            "max": 385.1881,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "iteration_duration": {
+            "p(90)": 1374.26116,
+            "p(95)": 1402.2267399999998,
+            "p(99)": 2040.9288,
+            "avg": 1357.6479652173916,
+            "min": 1275.9161,
+            "med": 1327.994,
+            "max": 2040.9288
+        },
+        "http_req_duration": {
+            "min": 275.0593,
+            "med": 326.3901,
+            "max": 378.0019,
+            "p(90)": 364.25286,
+            "p(95)": 370.41206,
+            "p(99)": 377.26784,
+            "avg": 325.34125942028993,
+            "thresholds": {
+                "p(95)<1000": false,
+                "p(99)<1500": false
+            }
+        },
+        "checks": {
+            "passes": 207,
+            "fails": 0,
+            "value": 1
+        },
+        "vus_max": {
+            "value": 3,
+            "min": 3,
+            "max": 3
+        },
+        "data_received": {
+            "count": 89772,
+            "rate": 2866.7104103027655
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "p(99)": 258.22554799999995,
+            "avg": 11.167656521739131,
+            "min": 0,
+            "med": 0,
+            "max": 260.5453,
+            "p(90)": 0
+        },
+        "http_req_waiting": {
+            "p(90)": 362.5938,
+            "p(95)": 370.0763,
+            "p(99)": 376.104268,
+            "avg": 324.16537101449273,
+            "min": 274.4005,
+            "med": 325.4162,
+            "max": 377.2738
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "status is 200": {
+                    "path": "::status is 200",
+                    "id": "6210a8cd14cd70477eba5c5e4cb3fb5f",
+                    "passes": 69,
+                    "fails": 0,
+                    "name": "status is 200"
+                },
+                "pizza has a name": {
+                    "name": "pizza has a name",
+                    "path": "::pizza has a name",
+                    "id": "87f6d930c504290631907e96d865988e",
+                    "passes": 69,
+                    "fails": 0
+                },
+                "every ingredient is vegetarian": {
+                    "fails": 0,
+                    "name": "every ingredient is vegetarian",
+                    "path": "::every ingredient is vegetarian",
+                    "id": "c3970a9f0b07aa8ece89d22f9396d30b",
+                    "passes": 69
+                }
+            }
+    }
+}

@@ -1,0 +1,48 @@
+{
+  "a4-spike": [
+    {
+      "start_s": 0,
+      "end_s": 30,
+      "requests": 15,
+      "p95_ms": 353.90858999999995,
+      "failed_rate": 0.0
+    },
+    {
+      "start_s": 35,
+      "end_s": 65,
+      "requests": 75,
+      "p95_ms": 375.78301,
+      "failed_rate": 0.0
+    },
+    {
+      "start_s": 70,
+      "end_s": 100,
+      "requests": 15,
+      "p95_ms": 400.4512199999998,
+      "failed_rate": 0.0
+    },
+    {
+      "start_s": 100,
+      "end_s": 130,
+      "requests": 14,
+      "p95_ms": 364.51529,
+      "failed_rate": 0.0
+    }
+  ],
+  "a5-soak": [
+    {
+      "start_s": 30,
+      "end_s": 150,
+      "requests": 118,
+      "p95_ms": 364.1189399999999,
+      "failed_rate": 0.0
+    },
+    {
+      "start_s": 510,
+      "end_s": 630,
+      "requests": 119,
+      "p95_ms": 370.74267,
+      "failed_rate": 0.0
+    }
+  ]
+}

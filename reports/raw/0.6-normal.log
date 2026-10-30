@@ -1,0 +1,42 @@
+
+
+  █ THRESHOLDS 
+
+    checks
+    ✓ 'rate>0.99' rate=100.00%
+
+    http_req_duration
+    ✓ 'p(95)<1500' p(95)=457.32ms
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 198     6.475969/s
+    checks_succeeded...: 100.00% 198 out of 198
+    checks_failed......: 0.00%   0 out of 198
+
+    ✓ status is 200
+    ✓ pizza has a name
+    ✓ every ingredient is vegetarian
+
+    HTTP
+    http_req_duration..............: avg=358.95ms min=284.47ms med=351ms max=519.4ms p(90)=412.22ms p(95)=457.32ms p(99)=518.72ms
+      { expected_response:true }...: avg=358.95ms min=284.47ms med=351ms max=519.4ms p(90)=412.22ms p(95)=457.32ms p(99)=518.72ms
+    http_req_failed................: 0.00% 0 out of 66
+    http_reqs......................: 66    2.158656/s
+
+    EXECUTION
+    iteration_duration.............: avg=1.38s    min=1.28s    med=1.35s max=2s      p(90)=1.44s    p(95)=1.51s    p(99)=2s      
+    iterations.....................: 66    2.158656/s
+    vus............................: 3     min=3       max=3
+    vus_max........................: 3     min=3       max=3
+
+    NETWORK
+    data_received..................: 86 kB 2.8 kB/s
+    data_sent......................: 12 kB 391 B/s
+
+
+
